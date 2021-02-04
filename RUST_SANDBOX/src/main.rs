@@ -12,6 +12,7 @@ mod pointer_ref;
 mod structs;
 mod enums;
 mod cli;
+mod encoder;
 
 fn main() {
     // print::run();
@@ -27,6 +28,9 @@ fn main() {
     // pointer_ref::run();
     // structs::run();
     // enums::run();
-    cli::run();
+    // cli::run();
+    // println!("{:?}", "zt??A_r????".as_bytes());
+    println!("{:?}", encoder::escape("A".as_bytes()));
+    // println!("{:?}", encoder::unescape(str(\200\000\000\000\000\000\000\377\027)));
 }
 
